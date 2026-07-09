@@ -1,0 +1,27 @@
+# Environment variables
+.env
+
+# Composer
+/vendor/
+
+# Logs
+/storage/logs/*
+!/storage/logs/.gitkeep
+
+# Cache
+/storage/cache/*
+!/storage/cache/.gitkeep
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# VS Code (optional)
+.vscode/
+
+# Temporary files
+*.log
+*.tmp
