@@ -1,0 +1,11 @@
+body{
+
+    background:var(--bg-color);
+
+    color:var(--text);
+
+    font-family:"Poppins",sans-serif;
+
+    line-height:1.6;
+
+}
