@@ -1,0 +1,107 @@
+/* ===========================
+   NAVBAR
+=========================== */
+
+.navbar {
+    width: 100%;
+    background: rgba(255, 252, 245, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 2px dashed #8D8D8D;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+/* ===========================
+   LOGO
+=========================== */
+
+.logo {
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #C0392B;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo span {
+    color: #2E2E2E;
+}
+
+/* ===========================
+   LINKS
+=========================== */
+
+.nav-links {
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #2E2E2E;
+    font-size: 1rem;
+    font-weight: 600;
+
+    transition: .3s ease;
+}
+
+.nav-links a:hover {
+
+    color: #C0392B;
+
+}
+
+/* ===========================
+   TAGLINE
+=========================== */
+
+.nav-tagline {
+
+    color: #8D8D8D;
+
+    font-size: .95rem;
+
+    font-style: italic;
+
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media (max-width: 768px) {
+
+    .container {
+
+        flex-direction: column;
+
+        justify-content: center;
+
+        height: auto;
+
+        padding: 20px 0;
+
+        gap: 20px;
+
+    }
+
+    .nav-links {
+
+        gap: 20px;
+
+    }
+
+    .nav-tagline {
+
+        display: none;
+
+    }
+
+}
