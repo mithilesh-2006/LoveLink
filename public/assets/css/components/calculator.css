@@ -204,6 +204,22 @@
 
 }
 
+.error-message {
+
+    min-height: 22px;
+
+    margin-top: 8px;
+
+    color: #C0392B;
+
+    font-size: .9rem;
+
+    font-weight: 600;
+
+    font-family: var(--font-handwriting);
+
+}
+
 /* ==========================================
    RESPONSIVE
 ========================================== */

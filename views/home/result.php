@@ -14,9 +14,9 @@
 
             <p class="greeting">
                 Dear
-                <span id="person-one">Your Name</span>
+                <span id="result-person-one">Your Name</span>
                 &
-                <span id="person-two">Partner</span>,
+                <span id="result-person-two">Partner</span>,
             </p>
 
             <p class="message">
@@ -26,8 +26,8 @@
 
             <div class="result-badge">
 
-                <span id="flames-result">
-                    ❤️ LOVE ❤️
+                <span id="result-relationship">
+                    LOVE
                 </span>
 
             </div>

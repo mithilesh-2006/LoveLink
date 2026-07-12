@@ -93,37 +93,43 @@
             Two names. One destiny.
         </p>
 
-        <form class="flames-form">
+        <form class="flames-form" id="flames-form">
 
-            <div class="input-field">
+    <div class="input-field">
 
-                <label>Your Name</label>
+        <label for="person-one">Your Name</label>
 
-                <input
-                    type="text"
-                    placeholder="Write your name..."
-                >
+        <input
+            type="text"
+            id="person-one"
+            placeholder="Write your name..."
+        >
+        <div class="error-message" id="person-one-error"></div>
+    
+    </div>
 
-            </div>
+    <div class="input-field">
 
-            <div class="input-field">
+        <label for="person-two">Partner's Name</label>
 
-                <label>Partner's Name</label>
+        <input
+            type="text"
+            id="person-two"
+            placeholder="Write their name..."
+        >
+        <div class="error-message" id="person-two-error"></div>
+   
+    </div>
 
-                <input
-                    type="text"
-                    placeholder="Write their name..."
-                >
+    <button
+        type="submit"
+        id="calculate-btn">
 
-            </div>
+        Calculate Destiny
 
-            <button type="submit">
+    </button>
 
-                ❤️ Calculate Destiny
-
-            </button>
-
-        </form>
+</form>
 
         <div class="flames-preview">
 
