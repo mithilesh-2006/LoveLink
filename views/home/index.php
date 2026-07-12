@@ -2,43 +2,57 @@
 
     <section class="hero">
 
-        <div class="container hero-content">
+    <div class="container hero-grid">
 
-            <div class="hero-left">
+        <div class="hero-content">
 
-                <span class="hero-icon">♡</span>
+            <span class="hero-badge">
+                ❤️ LoveLink
+            </span>
 
-                <h1>
-                    Where names
-                    <span>meet destiny.</span>
-                </h1>
+            <h1 class="hero-title">
 
-                <p>
-                    Discover what fate has written for two hearts with the
-                    timeless FLAMES game. A nostalgic love calculator wrapped
-                    in a beautiful notebook experience.
-                </p>
+                Where Names
 
-                <div class="hero-tags">
-                    <span>#LoveLink</span>
-                    <span>#FLAMES</span>
-                    <span>#NotebookLove</span>
-                </div>
+                <span>Meet Destiny.</span>
 
-            </div>
+            </h1>
 
-            <div class="hero-right">
+            <p>
 
-                <div class="sticky-note">
-                    "Do you like me?
-                    Circle Yes or No ❤️"
-                </div>
+                Discover what fate has written for two hearts with the timeless
+                FLAMES game wrapped inside a nostalgic notebook experience.
+
+            </p>
+
+            <div class="hero-tags">
+
+                <span>#LoveLink</span>
+
+                <span>#FLAMES</span>
+
+                <span>#NotebookLove</span>
 
             </div>
 
         </div>
 
-    </section>
+        <div class="hero-note">
+
+            <div class="sticky-note">
+
+                <p>"Do you like me?"</p>
+
+                <small>Circle YES or NO ❤️</small>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+    
 
     <section class="calculator">
 
