@@ -16,3 +16,4 @@
 </head>
 
 <body>
+    <div class="spiral-binding" aria-hidden="true"></div>

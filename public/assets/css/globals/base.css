@@ -18,9 +18,15 @@ body{
 
     min-height:100vh;
 
+    overflow-x:hidden;
+
+    font-family:var(--body-font);
+
+    color:var(--text);
+
     background-color:#FFFDF5;
 
-    /* Notebook horizontal lines */
+    /* Notebook lines */
 
     background-image:
 
@@ -32,19 +38,27 @@ body{
 
             transparent 38px,
 
-            rgba(90,140,255,.18) 39px,
+            rgba(92,146,255,.18) 39px,
 
-            rgba(90,140,255,.18) 40px
+            rgba(92,146,255,.18) 40px
+
+        ),
+
+        /* Paper texture */
+
+        radial-gradient(
+
+            rgba(0,0,0,.025) 1px,
+
+            transparent 1px
 
         );
 
-    background-size:100% 40px;
+    background-size:
 
-    color:var(--text);
+        100% 40px,
 
-    font-family:var(--body-font);
-
-    padding-bottom:250px;
+        8px 8px;
 
 }
 
@@ -66,14 +80,15 @@ body::before{
 
     height:100vh;
 
-    background:#E57373;
+    background:#D85C5C;
 
-    opacity:.7;
+    box-shadow:
+
+        2px 0 4px rgba(0,0,0,.08);
 
     z-index:-1;
 
 }
-
 /* ==========================================
    SELECTION
 ========================================== */
@@ -182,3 +197,50 @@ hr{
     outline-offset:4px;
 
 }
+
+/* ==========================================
+   SPIRAL BINDING
+========================================== */
+
+body{
+
+    position:relative;
+
+}
+
+body::marker{
+
+    content:none;
+
+}
+
+/* ==========================================
+   SPIRAL BINDING
+========================================== */
+
+.spiral-binding{
+
+    position:fixed;
+
+    top:0;
+
+    left:18px;
+
+    width:28px;
+
+    height:100vh;
+
+    z-index:5;
+
+    pointer-events:none;
+
+    background-image:
+
+        radial-gradient(circle,#B8B8B8 7px,transparent 8px);
+
+    background-size:28px 48px;
+
+    background-repeat:repeat-y;
+
+}
+
