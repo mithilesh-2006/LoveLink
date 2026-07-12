@@ -1,100 +1,166 @@
-/* ===========================
+/* ==========================================
    NAVBAR
-=========================== */
+========================================== */
 
 .navbar {
-    width: 100%;
-    background: rgba(255, 252, 245, 0.95);
-    backdrop-filter: blur(10px);
-    border-bottom: 2px dashed #8D8D8D;
     position: sticky;
     top: 0;
-    z-index: 999;
+    z-index: 1000;
+
+    width: 100%;
+
+    background: rgba(255, 252, 245, 0.95);
+    backdrop-filter: blur(12px);
+
+    border-bottom: 2px dashed var(--border);
 }
 
-/* ===========================
+/* ==========================================
+   NAVBAR CONTAINER
+========================================== */
+
+.navbar-container {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80px;
+
+}
+
+/* ==========================================
    LOGO
-=========================== */
+========================================== */
 
 .logo {
-    text-decoration: none;
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: #C0392B;
 
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
+
+    text-decoration: none;
+
+    color: var(--primary);
+
+    font-size: 2rem;
+    font-weight: 700;
+
+    transition: .3s;
+
+}
+
+.logo:hover {
+
+    transform: scale(1.05);
+
 }
 
 .logo span {
-    color: #2E2E2E;
+
+    color: var(--text);
+
 }
 
-/* ===========================
-   LINKS
-=========================== */
+/* ==========================================
+   NAVIGATION
+========================================== */
 
 .nav-links {
-    list-style: none;
 
     display: flex;
     align-items: center;
     gap: 40px;
+
+    list-style: none;
+
 }
 
 .nav-links a {
+
+    position: relative;
+
     text-decoration: none;
-    color: #2E2E2E;
+
+    color: var(--text);
+
     font-size: 1rem;
     font-weight: 600;
 
     transition: .3s ease;
+
+}
+
+.nav-links a::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -6px;
+
+    width: 0;
+    height: 2px;
+
+    background: var(--primary);
+
+    transition: .3s;
+
 }
 
 .nav-links a:hover {
 
-    color: #C0392B;
+    color: var(--primary);
 
 }
 
-/* ===========================
+.nav-links a:hover::after {
+
+    width: 100%;
+
+}
+
+/* ==========================================
    TAGLINE
-=========================== */
+========================================== */
 
 .nav-tagline {
 
-    color: #8D8D8D;
+    color: var(--border);
 
     font-size: .95rem;
 
     font-style: italic;
 
+    white-space: nowrap;
+
 }
 
-/* ===========================
+/* ==========================================
    MOBILE
-=========================== */
+========================================== */
 
-@media (max-width: 768px) {
+@media (max-width:768px) {
 
-    .container {
+    .navbar-container {
 
         flex-direction: column;
 
         justify-content: center;
 
-        height: auto;
+        gap: 20px;
 
         padding: 20px 0;
-
-        gap: 20px;
 
     }
 
     .nav-links {
 
         gap: 20px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
 
     }
 
