@@ -4,7 +4,6 @@
  * ==========================================
  */
 
-console.log("calculator.js loaded");
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -29,7 +28,6 @@ function clearErrors() {
  */
 
 function showError(field, message) {
-    console.log("showError called:", field, message);
 
     document.getElementById(`${field}-error`).textContent = message;
 
@@ -54,7 +52,6 @@ function handleCalculation(event) {
     
 
     const validation = validateForm(personOne, personTwo);
-    console.log(validation);
 
     if (!validation.valid) {
 
@@ -74,15 +71,19 @@ function handleCalculation(event) {
     );
 
     // Display result
-    showResult({
+    playFlamesAnimation(result, () => {
 
-        personOne: validation.data.personOne,
+        showResult({
 
-        personTwo: validation.data.personTwo,
+            personOne: validation.data.personOne,
 
-        relationship: result.relationship,
+            personTwo: validation.data.personTwo,
 
-        remainingCount: result.remainingCount
+            relationship: result.relationship,
+
+            remainingCount: result.remainingCount
+
+        });
 
     });
 

@@ -5,13 +5,22 @@
  */
 
 const FLAMES = [
-    "FRIEND",
-    "LOVE",
-    "AFFECTION",
-    "MARRIAGE",
-    "ENEMY",
-    "SIBLING"
+    "F",
+    "L",
+    "A",
+    "M",
+    "E",
+    "S"
 ];
+
+const RELATIONSHIP_MAP = {
+    F: "FRIEND",
+    L: "LOVE",
+    A: "AFFECTION",
+    M: "MARRIAGE",
+    E: "ENEMY",
+    S: "SIBLING"
+};
 
 /**
  * Remove spaces and convert to lowercase.
@@ -25,8 +34,7 @@ function prepareName(name) {
 }
 
 /**
- * Remove common characters.
- * Returns the number of remaining letters.
+ * Count remaining unmatched letters.
  */
 function countRemainingLetters(name1, name2) {
 
@@ -53,38 +61,97 @@ function countRemainingLetters(name1, name2) {
 }
 
 /**
- * Perform FLAMES elimination.
+ * Generate the exact elimination order.
  */
-function eliminateFLAMES(count) {
+function generateEliminationSequence(count) {
 
-    let flames = [...FLAMES];
+    let letters = [...FLAMES];
 
-    let index = 0;
+    let steps = [];
 
-    while (flames.length > 1) {
+    let eliminationOrder = [];
 
-        index = (index + count - 1) % flames.length;
+    let currentIndex = 0;
 
-        flames.splice(index, 1);
+    while (letters.length > 1) {
+
+        let path = [];
+
+        // Record every count
+        for (let i = 0; i < count; i++) {
+
+            path.push(currentIndex);
+
+            currentIndex = (currentIndex + 1) % letters.length;
+
+        }
+
+        // Last counted letter
+        const removeIndex =
+            (currentIndex - 1 + letters.length) % letters.length;
+
+        const removedLetter = letters[removeIndex];
+
+        eliminationOrder.push(removedLetter);
+
+        steps.push({
+
+            path,
+
+            removeIndex,
+
+            removed: removedLetter,
+
+            lettersBefore: [...letters]
+
+        });
+
+        letters.splice(removeIndex, 1);
+
+        // Continue from the next letter
+        if (letters.length > 0) {
+
+            currentIndex = removeIndex % letters.length;
+
+        }
 
     }
 
-    return flames[0];
+    return {
+
+        winnerLetter: letters[0],
+
+        eliminationOrder,
+
+        steps
+
+    };
 
 }
 
 /**
- * Main function.
+ * Main FLAMES function
  */
 function calculateFlames(name1, name2) {
 
-    const count = countRemainingLetters(name1, name2);
+    const remainingCount =
+        countRemainingLetters(name1, name2);
+
+    const sequence =
+        generateEliminationSequence(remainingCount);
 
     return {
 
-        remainingCount: count,
+        remainingCount,
 
-        relationship: eliminateFLAMES(count)
+        winnerLetter: sequence.winnerLetter,
+
+        eliminationOrder: sequence.eliminationOrder,
+
+        steps: sequence.steps,
+
+        relationship:
+            RELATIONSHIP_MAP[sequence.winnerLetter]
 
     };
 
