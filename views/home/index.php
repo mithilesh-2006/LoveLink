@@ -2,51 +2,84 @@
     <div class="notebook">
         <section class="hero">
 
-        <div class="container hero-grid">
+    <div class="container hero-content">
 
-            <div class="hero-content">
+        <!-- LEFT SIDE -->
 
-                <span class="hero-badge">
-                    ❤️ LoveLink
-                </span>
+        <div class="hero-left">
 
-                <h1 class="hero-title">
+            <span class="hero-label">
+                ❤️ Welcome to LoveLink
+            </span>
 
-                    Where Names
+            <h1>
+                Where Names
+                <span>Meet Destiny.</span>
+            </h1>
 
-                    <span>Meet Destiny.</span>
+            <p class="hero-description">
 
-                </h1>
+                Rediscover the nostalgic FLAMES game with a beautifully crafted
+                notebook-inspired experience. Enter two names and let destiny
+                reveal your relationship in the most playful way.
 
-                <p>
+            </p>
 
-                    Discover what fate has written for two hearts with the timeless
-                    FLAMES game wrapped inside a nostalgic notebook experience.
+            <p class="handwritten-note">
 
-                </p>
+                "Every love story begins with two names."
 
-                <div class="hero-tags">
+            </p>
 
-                    <span>#LoveLink</span>
+            <div class="hero-tags">
 
-                    <span>#FLAMES</span>
+                <span>📖 Vintage</span>
 
-                    <span>#NotebookLove</span>
+                <span>❤️ FLAMES</span>
 
-                </div>
+                <span>✨ Memories</span>
 
             </div>
 
-            <div class="hero-note">
+            <a href="#calculator" class="hero-btn">
 
-                <div class="sticky-note">
-                    <p>Do you like me?</p>
-                    <small>Circle <strong>YES</strong> or <strong>NO</strong> ❤️</small>
-                </div>
+                ❤️ Calculate Now
+
+            </a>
+
+        </div>
+
+        <!-- RIGHT SIDE -->
+
+        <div class="hero-right">
+
+            <div class="sticky-note">
+
+                <div class="tape"></div>
+
+                <p>
+
+                    Do you
+                    like me?
+
+                </p>
+
+                <small>
+
+                    Circle
+                    <strong>YES</strong>
+                    or
+                    <strong>NO</strong>
+
+                    ❤️
+
+                </small>
 
             </div>
 
         </div>
+
+    </div>
 
         </section>
 
