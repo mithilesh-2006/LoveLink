@@ -1,8 +1,3 @@
-/**
- * ==========================================
- * LoveLink Validation Module
- * ==========================================
- */
 
 /**
  * Removes leading/trailing spaces
