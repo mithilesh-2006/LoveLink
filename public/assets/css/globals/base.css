@@ -8,11 +8,67 @@ html{
 
 }
 
+/* ==========================================
+   BASE STYLES
+========================================== */
+
 body{
 
-    background:var(--background);
+    margin:0;
 
-    overflow-x:hidden;
+    min-height:100vh;
+
+    background-color:#FFFDF5;
+
+    /* Notebook horizontal lines */
+
+    background-image:
+
+        repeating-linear-gradient(
+
+            to bottom,
+
+            transparent 0px,
+
+            transparent 38px,
+
+            rgba(90,140,255,.18) 39px,
+
+            rgba(90,140,255,.18) 40px
+
+        );
+
+    background-size:100% 40px;
+
+    color:var(--text);
+
+    font-family:var(--body-font);
+
+}
+
+/* ==========================================
+   NOTEBOOK LEFT MARGIN
+========================================== */
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    top:0;
+
+    left:90px;
+
+    width:3px;
+
+    height:100vh;
+
+    background:#E57373;
+
+    opacity:.7;
+
+    z-index:-1;
 
 }
 

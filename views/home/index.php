@@ -1,120 +1,120 @@
 <main>
+    <div class="notebook">
+        <section class="hero">
 
-    <section class="hero">
+        <div class="container hero-grid">
 
-    <div class="container hero-grid">
+            <div class="hero-content">
 
-        <div class="hero-content">
+                <span class="hero-badge">
+                    ❤️ LoveLink
+                </span>
 
-            <span class="hero-badge">
-                ❤️ LoveLink
-            </span>
+                <h1 class="hero-title">
 
-            <h1 class="hero-title">
+                    Where Names
 
-                Where Names
+                    <span>Meet Destiny.</span>
 
-                <span>Meet Destiny.</span>
+                </h1>
 
-            </h1>
+                <p>
 
-            <p>
+                    Discover what fate has written for two hearts with the timeless
+                    FLAMES game wrapped inside a nostalgic notebook experience.
 
-                Discover what fate has written for two hearts with the timeless
-                FLAMES game wrapped inside a nostalgic notebook experience.
+                </p>
 
-            </p>
+                <div class="hero-tags">
 
-            <div class="hero-tags">
+                    <span>#LoveLink</span>
 
-                <span>#LoveLink</span>
+                    <span>#FLAMES</span>
 
-                <span>#FLAMES</span>
-
-                <span>#NotebookLove</span>
-
-            </div>
-
-        </div>
-
-        <div class="hero-note">
-
-            <div class="sticky-note">
-
-                <p>"Do you like me?"</p>
-
-                <small>Circle YES or NO ❤️</small>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-    
-
-    <section class="calculator">
-
-    <div class="container">
-
-        <div class="calculator-card">
-
-            <div class="paper-tape"></div>
-
-            <h2>Calculate Your Fate</h2>
-
-            <form>
-
-                <div class="input-group">
-
-                    <div class="field">
-
-                        <label>Your Name</label>
-
-                        <input
-                            type="text"
-                            placeholder="Type your name..."
-                        >
-
-                    </div>
-
-                    <div class="field">
-
-                        <label>Partner's Name</label>
-
-                        <input
-                            type="text"
-                            placeholder="Type your partner's name..."
-                        >
-
-                    </div>
+                    <span>#NotebookLove</span>
 
                 </div>
 
-                <button type="submit">
+            </div>
 
-                    ❤️ Calculate
+            <div class="hero-note">
 
-                </button>
-
-            </form>
-
-            <div class="flames">
-
-                <span>F</span>
-                <span>L</span>
-                <span>A</span>
-                <span>M</span>
-                <span>E</span>
-                <span>S</span>
+                <div class="sticky-note">
+                    <p>Do you like me?</p>
+                    <small>Circle <strong>YES</strong> or <strong>NO</strong> ❤️</small>
+                </div>
 
             </div>
 
         </div>
 
+        </section>
+
+        <section class="calculator">
+
+        <div class="container">
+
+            <div class="calculator-card">
+
+                <div class="paper-tape"></div>
+
+                <h2 class="card-title">
+
+                    Calculate Your Fate
+
+                </h2>
+
+                <form id="flamesForm">
+
+                    <div class="input-group">
+
+                        <div class="field">
+
+                            <label>Your Name</label>
+
+                            <input
+                                type="text"
+                                placeholder="Enter your name">
+
+                        </div>
+
+                        <div class="field">
+
+                            <label>Partner's Name</label>
+
+                            <input
+                                type="text"
+                                placeholder="Enter partner's name">
+
+                        </div>
+
+                    </div>
+
+                    <button
+                        class="primary-btn"
+                        type="submit">
+
+                        ❤️ Calculate
+
+                    </button>
+
+                </form>
+
+                <div class="flames">
+
+                    <span class="flame-letter">F</span>
+                    <span class="flame-letter">L</span>
+                    <span class="flame-letter">A</span>
+                    <span class="flame-letter">M</span>
+                    <span class="flame-letter">E</span>
+                    <span class="flame-letter">S</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        </section>
     </div>
-
-    </section>
-
 </main>

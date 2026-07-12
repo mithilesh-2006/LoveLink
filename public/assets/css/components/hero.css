@@ -130,17 +130,29 @@
 
 .sticky-note p{
 
-    font-family:var(--heading-font);
+    font-family:var(--handwriting-font);
 
-    font-size:1.8rem;
+    font-size:2.2rem;
 
-    margin-bottom:1rem;
+    font-weight:700;
+
+    line-height:1.2;
 
     color:var(--text);
+
+    margin-bottom:1rem;
 
 }
 
 .sticky-note small{
+
+    display:block;
+
+    margin-top:1rem;
+
+    font-family:var(--handwriting-font);
+
+    font-size:1.5rem;
 
     color:var(--text-light);
 
