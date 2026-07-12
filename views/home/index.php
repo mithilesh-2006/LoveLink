@@ -1,113 +1,79 @@
 <main>
+    <div class="notebook">
+        <section class="hero">
 
-    <section class="hero">
+    <div class="container hero-content">
 
-    <div class="container hero-grid">
+        <!-- LEFT SIDE -->
 
-        <div class="hero-content">
+        <div class="hero-left">
 
-            <span class="hero-badge">
-                ❤️ LoveLink
+            <span class="hero-label">
+                ❤️ Welcome to LoveLink
             </span>
 
-            <h1 class="hero-title">
-
+            <h1>
                 Where Names
-
                 <span>Meet Destiny.</span>
-
             </h1>
 
-            <p>
+            <p class="hero-description">
 
-                Discover what fate has written for two hearts with the timeless
-                FLAMES game wrapped inside a nostalgic notebook experience.
+                Rediscover the nostalgic FLAMES game with a beautifully crafted
+                notebook-inspired experience. Enter two names and let destiny
+                reveal your relationship in the most playful way.
+
+            </p>
+
+            <p class="handwritten-note">
+
+                "Every love story begins with two names."
 
             </p>
 
             <div class="hero-tags">
 
-                <span>#LoveLink</span>
+                <span>📖 Vintage</span>
 
-                <span>#FLAMES</span>
+                <span>❤️ FLAMES</span>
 
-                <span>#NotebookLove</span>
+                <span>✨ Memories</span>
 
             </div>
 
+            <a href="#calculator" class="hero-btn">
+
+                ❤️ Calculate Now
+
+            </a>
+
         </div>
 
-        <div class="hero-note">
+        <!-- RIGHT SIDE -->
+
+        <div class="hero-right">
 
             <div class="sticky-note">
 
-                <p>"Do you like me?"</p>
+                <div class="tape"></div>
 
-                <small>Circle YES or NO ❤️</small>
+                <p>
 
-            </div>
+                    Do you
+                    like me?
 
-        </div>
+                </p>
 
-    </div>
+                <small>
 
-</section>
-    
+                    Circle
+                    <strong>YES</strong>
+                    or
+                    <strong>NO</strong>
 
-    <section class="calculator">
+                    ❤️
 
-    <div class="container">
-
-        <div class="calculator-card">
-
-            <div class="paper-tape"></div>
-
-            <h2>Calculate Your Fate</h2>
-
-            <form>
-
-                <div class="input-group">
-
-                    <div class="field">
-
-                        <label>Your Name</label>
-
-                        <input
-                            type="text"
-                            placeholder="Type your name..."
-                        >
-
-                    </div>
-
-                    <div class="field">
-
-                        <label>Partner's Name</label>
-
-                        <input
-                            type="text"
-                            placeholder="Type your partner's name..."
-                        >
-
-                    </div>
-
-                </div>
-
-                <button type="submit">
-
-                    ❤️ Calculate
-
-                </button>
-
-            </form>
-
-            <div class="flames">
-
-                <span>F</span>
-                <span>L</span>
-                <span>A</span>
-                <span>M</span>
-                <span>E</span>
-                <span>S</span>
+                </small>
 
             </div>
 
@@ -115,6 +81,64 @@
 
     </div>
 
-    </section>
+        </section>
 
+        <section class="calculator" id="calculator">
+
+    <div class="calculator-wrapper">
+
+        <h2>Calculate Your Destiny</h2>
+
+        <p class="calculator-subtitle">
+            Two names. One destiny.
+        </p>
+
+        <form class="flames-form">
+
+            <div class="input-field">
+
+                <label>Your Name</label>
+
+                <input
+                    type="text"
+                    placeholder="Write your name..."
+                >
+
+            </div>
+
+            <div class="input-field">
+
+                <label>Partner's Name</label>
+
+                <input
+                    type="text"
+                    placeholder="Write their name..."
+                >
+
+            </div>
+
+            <button type="submit">
+
+                ❤️ Calculate Destiny
+
+            </button>
+
+        </form>
+
+        <div class="flames-preview">
+
+            <span>F</span>
+            <span>L</span>
+            <span>A</span>
+            <span>M</span>
+            <span>E</span>
+            <span>S</span>
+
+        </div>
+
+    </div>
+
+        </section>
+    </div>
+    <?php include 'result.php'; ?>
 </main>

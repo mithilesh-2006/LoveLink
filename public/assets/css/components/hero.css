@@ -4,37 +4,7 @@
 
 .hero{
 
-    min-height:90vh;
-
-    display:flex;
-
-    align-items:center;
-
-}
-
-.hero-title{
-
-    font-size:5rem;
-
-    line-height:1.05;
-
-}
-
-.hero-title span{
-
-    color:var(--primary);
-
-}
-
-.hero-grid{
-
-    display:grid;
-
-    grid-template-columns:1.2fr .8fr;
-
-    align-items:center;
-
-    gap:5rem;
+    padding:80px 0;
 
 }
 
@@ -42,59 +12,33 @@
 
     display:flex;
 
-    flex-direction:column;
+    justify-content:space-between;
 
-    gap:2rem;
+    align-items:center;
 
-    max-width:650px;
-
-}
-
-.hero-content p{
-
-    font-size:1.15rem;
-
-    color:var(--text-light);
-
-    max-width:560px;
+    gap:80px;
 
 }
 
-.hero-badge{
+/* ==========================================
+   LEFT
+========================================== */
 
-    width:fit-content;
+.hero-left{
 
-    padding:.7rem 1.4rem;
-
-    background:var(--paper);
-
-    border:2px solid var(--border);
-
-    border-radius:999px;
-
-    box-shadow:var(--shadow-sm);
-
-    font-weight:600;
+    flex:1;
 
 }
 
-.hero-tags{
+.hero-label{
 
-    display:flex;
+    display:inline-block;
 
-    gap:1rem;
+    padding:8px 18px;
 
-    flex-wrap:wrap;
+    background:#FFECEC;
 
-}
-
-.hero-tags span{
-
-    padding:.6rem 1rem;
-
-    background:var(--paper);
-
-    border:2px solid var(--border);
+    color:var(--primary);
 
     border-radius:999px;
 
@@ -102,39 +46,171 @@
 
     font-weight:600;
 
+    margin-bottom:25px;
+
 }
+
+.hero h1{
+
+    font-family:var(--heading-font);
+
+    font-size:4.5rem;
+
+    line-height:1.1;
+
+    margin-bottom:25px;
+
+    color:var(--text);
+
+}
+
+.hero h1 span{
+
+    color:var(--primary);
+
+}
+
+.hero-description{
+
+    font-size:1.15rem;
+
+    line-height:1.9;
+
+    color:var(--text-light);
+
+    max-width:650px;
+
+}
+
+/* ==========================================
+   HANDWRITTEN
+========================================== */
+
+.handwritten-note{
+
+    margin-top:30px;
+
+    font-family:var(--handwriting-font);
+
+    font-size:2rem;
+
+    color:#C0392B;
+
+    transform:rotate(-2deg);
+
+}
+
+/* ==========================================
+   TAGS
+========================================== */
+
+.hero-tags{
+
+    display:flex;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+    margin:35px 0;
+
+}
+
+.hero-tags span{
+
+    padding:10px 18px;
+
+    background:#FFF6E8;
+
+    border:1px dashed #D5B37A;
+
+    border-radius:999px;
+
+    font-size:.95rem;
+
+}
+
+/* ==========================================
+   BUTTON
+========================================== */
+
+.hero-btn{
+
+    display:inline-block;
+
+    text-decoration:none;
+
+    background:var(--primary);
+
+    color:white;
+
+    padding:16px 36px;
+
+    border-radius:10px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.hero-btn:hover{
+
+    transform:translateY(-4px);
+
+}
+
+/* ==========================================
+   RIGHT
+========================================== */
+
+.hero-right{
+
+    flex:.9;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+/* ==========================================
+   STICKY NOTE
+========================================== */
 
 .sticky-note{
 
-    width:320px;
+    position:relative;
 
-    background:#FFF59D;
+    width:330px;
 
-    padding:2.5rem;
+    background:#FFF4A8;
 
-    border-radius:14px;
+    padding:45px 35px;
 
-    box-shadow:10px 10px 0 rgba(0,0,0,.15);
+    border-radius:12px;
+
+    box-shadow:12px 12px 30px rgba(0,0,0,.12);
 
     transform:rotate(-4deg);
 
-    transition:var(--transition);
+    transition:.35s;
 
 }
 
 .sticky-note:hover{
 
-    transform:rotate(-2deg) translateY(-6px);
+    transform:rotate(-2deg) scale(1.03);
 
 }
 
 .sticky-note p{
 
-    font-family:var(--heading-font);
+    font-family:var(--handwriting-font);
 
-    font-size:1.8rem;
+    font-size:2.3rem;
 
-    margin-bottom:1rem;
+    line-height:1.2;
 
     color:var(--text);
 
@@ -142,6 +218,68 @@
 
 .sticky-note small{
 
-    color:var(--text-light);
+    display:block;
+
+    margin-top:25px;
+
+    font-family:var(--handwriting-font);
+
+    font-size:1.5rem;
+
+    color:#555;
+
+}
+
+/* ==========================================
+   TAPE
+========================================== */
+
+.tape{
+
+    position:absolute;
+
+    width:120px;
+
+    height:32px;
+
+    background:rgba(255,255,255,.45);
+
+    backdrop-filter:blur(2px);
+
+    top:-16px;
+
+    left:50%;
+
+    transform:translateX(-50%) rotate(-5deg);
+
+    border-radius:4px;
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:900px){
+
+    .hero-content{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+    .hero-description{
+
+        margin:auto;
+
+    }
+
+    .hero-tags{
+
+        justify-content:center;
+
+    }
 
 }

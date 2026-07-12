@@ -1,78 +1,72 @@
-/* ===========================
-   CALCULATOR SECTION
-=========================== */
+/* ==========================================
+   CALCULATOR
+========================================== */
 
 .calculator{
 
-    padding:100px 0;
+    padding:50px 0;
 
 }
 
-.calculator-card {
+.calculator-wrapper{
 
-    position: relative;
+    max-width:700px;
 
-    background: #FFF9EA;
-
-    border: 2px solid #9a9a9a;
-
-    border-radius: 18px;
-
-    padding: 60px;
-
-    box-shadow: 8px 8px 0 rgba(0,0,0,.15);
-
-    overflow: hidden;
+    margin:auto;
 
 }
 
-.paper-tape{
-
-    width:120px;
-
-    height:28px;
-
-    background:#FFD89C;
-
-    position:absolute;
-
-    top:-14px;
-
-    left:50%;
-
-    transform:translateX(-50%) rotate(8deg);
-
-    opacity:.8;
-
-    border-radius:4px;
-
-}
+/* ==========================================
+   TITLE
+========================================== */
 
 .calculator h2{
 
     text-align:center;
 
-    margin-bottom:50px;
+    font-family:var(--heading-font);
+
+    font-size:3rem;
 
     color:var(--primary);
 
-    font-family:"Playfair Display",serif;
-
-    font-size:2.5rem;
+    margin-bottom:10px;
 
 }
 
-.input-group{
+.calculator-subtitle{
 
-    display:grid;
+    text-align:center;
 
-    grid-template-columns:1fr 1fr;
+    font-family:var(--handwriting-font);
 
-    gap:30px;
+    font-size:1.5rem;
+
+    color:var(--text-light);
+
+    margin-bottom:60px;
 
 }
 
-.field{
+/* ==========================================
+   FORM
+========================================== */
+
+.flames-form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:24px;
+
+}
+
+/* ==========================================
+   INPUT
+========================================== */
+
+.input-field{
 
     display:flex;
 
@@ -80,165 +74,65 @@
 
 }
 
-.field label{
+.input-field label{
 
-    margin-bottom:10px;
+    font-family:var(--handwriting-font);
 
-    font-weight:600;
+    font-size:1.6rem;
 
-    letter-spacing:1px;
+    color:var(--text);
 
-    text-transform:uppercase;
-
-}
-
-.field input{
-
-    width:100%;
-
-    margin-top:8px;
-
-    padding:16px;
-
-    border:2px solid #8D8D8D;
-
-    border-radius:10px;
-
-    background:white;
-
-    font-size:1rem;
+    margin-bottom:6px;
 
 }
 
-.field input:focus{
+.input-field input{
+
+    background:transparent;
+
+    border:none;
+
+    border-bottom:3px solid #B9B9B9;
+
+    padding:12px 5px;
+
+    font-size:1.1rem;
+
+    font-family:var(--body-font);
+
+    outline:none;
+
+    transition:.3s;
+
+}
+
+.input-field input:focus{
 
     border-color:var(--primary);
 
-    box-shadow:0 0 0 4px rgba(192,57,43,.15);
-
 }
 
-.calculator button{
+/* ==========================================
+   BUTTON
+========================================== */
 
-    display:block;
+.flames-form button{
 
-    margin:50px auto;
+    width:max-content;
 
-    padding:18px 60px;
+    margin:10px auto 0;
+
+    padding:18px 42px;
+
+    border:none;
+
+    border-radius:10px;
 
     background:var(--primary);
 
     color:white;
 
-    font-size:1.2rem;
-
-    font-weight:bold;
-
-    border:none;
-
-    border-radius:12px;
-
-    cursor:pointer;
-
-    transition:.3s;
-
-}
-
-.calculator button:hover{
-
-    transform:translateY(-3px);
-
-    box-shadow:0 10px 20px rgba(0,0,0,.15);
-
-}
-
-form{
-
-    margin-top:40px;
-
-}
-
-.flames{
-
-    display:flex;
-
-    justify-content:center;
-
-    gap:18px;
-
-    flex-wrap:wrap;
-
-}
-
-.flames span{
-
-    width:70px;
-
-    height:70px;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    background:white;
-
-    border:2px solid var(--border);
-
-    font-size:2rem;
-
-    font-weight:bold;
-
-    border-radius:12px;
-
-    transition:.3s;
-
-}
-
-.flames span:hover{
-
-    transform:translateY(-8px);
-
-}
-
-@media(max-width:768px){
-
-.input-group{
-
-    grid-template-columns:1fr;
-
-}
-
-.calculator-card{
-
-    padding:30px;
-
-}
-
-.calculator h2{
-
-    font-size:2rem;
-
-}
-
-.calculator button{
-
-    margin:45px auto;
-
-    display:block;
-
-    padding:18px 70px;
-
-    background:#C0392B;
-
-    color:white;
-
-    border:none;
-
-    border-radius:12px;
-
-    font-size:1.2rem;
+    font-size:1rem;
 
     font-weight:700;
 
@@ -248,43 +142,94 @@ form{
 
 }
 
-.calculator button:hover{
+.flames-form button:hover{
 
-    transform:translateY(-5px);
+    transform:translateY(-4px);
+
+    box-shadow:0 12px 25px rgba(192,57,43,.25);
 
 }
 
-.flames span{
+/* ==========================================
+   FLAMES PREVIEW
+========================================== */
 
-    width:65px;
+.flames-preview{
 
-    height:65px;
-
-    background:white;
-
-    border:2px solid #8D8D8D;
+    margin-top:35px;
 
     display:flex;
 
     justify-content:center;
 
+    gap:12px;
+
+    flex-wrap:wrap;
+
+}
+
+.flames-preview span{
+
+    width:60px;
+
+    height:60px;
+
+    display:flex;
+
     align-items:center;
 
-    font-size:2rem;
+    justify-content:center;
 
-    font-weight:bold;
+    border:2px dashed #D5B37A;
 
-    border-radius:10px;
+    border-radius:50%;
+
+    background:#FFF9E8;
+
+    font-family:var(--heading-font);
+
+    font-size:1.8rem;
+
+    color:var(--primary);
 
     transition:.3s;
 
 }
 
-.flames span:hover{
+.flames-preview span:hover{
 
-    background:#FDECEC;
+    transform:rotate(-8deg) scale(1.08);
 
-    transform:translateY(-6px);
+    background:#FFF2C8;
 
 }
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:768px){
+
+    .calculator h2{
+
+        font-size:2.2rem;
+
+    }
+
+    .calculator-subtitle{
+        margin-bottom:35px;
+        font-size:1.2rem;
+
+    }
+
+    .flames-preview span{
+
+        width:50px;
+
+        height:50px;
+
+        font-size:1.5rem;
+
+    }
+
 }
