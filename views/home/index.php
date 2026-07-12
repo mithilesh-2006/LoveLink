@@ -1,5 +1,4 @@
 <main>
-    <div class="notebook">
         <section class="hero">
 
     <div class="container hero-content">
@@ -130,21 +129,27 @@
     </button>
 
 </form>
+        <div id="flames-animation" class="flames-animation">
 
-        <div class="flames-preview">
+            <div class="animation-header">
 
-            <span>F</span>
-            <span>L</span>
-            <span>A</span>
-            <span>M</span>
-            <span>E</span>
-            <span>S</span>
+                <h3>FLAMES Elimination</h3>
+
+            </div>
+
+            <div id="letters-container" class="letters-container">
+
+                <span data-letter="F">F</span>
+                <span data-letter="L">L</span>
+                <span data-letter="A">A</span>
+                <span data-letter="M">M</span>
+                <span data-letter="E">E</span>
+                <span data-letter="S">S</span>
+
+            </div>
 
         </div>
 
-    </div>
-
         </section>
-    </div>
     <?php include 'result.php'; ?>
 </main>
