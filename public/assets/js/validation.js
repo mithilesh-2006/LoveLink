@@ -70,10 +70,9 @@ function validateForm(name1, name2) {
     if (isEmpty(name1)) {
 
         return {
-
             valid: false,
+            field: "person-one",
             message: "Please enter your name."
-
         };
 
     }
@@ -83,6 +82,7 @@ function validateForm(name1, name2) {
         return {
 
             valid: false,
+            field: "person-two",
             message: "Please enter your partner's name."
 
         };
@@ -94,6 +94,7 @@ function validateForm(name1, name2) {
         return {
 
             valid: false,
+            field: "person-one",    
             message: "Your name must contain at least 2 letters."
 
         };
@@ -105,6 +106,7 @@ function validateForm(name1, name2) {
         return {
 
             valid: false,
+            field: "person-two",
             message: "Partner's name must contain at least 2 letters."
 
         };
@@ -116,6 +118,7 @@ function validateForm(name1, name2) {
         return {
 
             valid: false,
+            field: "person-one",
             message: "Your name can contain only letters."
 
         };
@@ -127,6 +130,7 @@ function validateForm(name1, name2) {
         return {
 
             valid: false,
+            field: "person-two",
             message: "Partner's name can contain only letters."
 
         };
@@ -138,6 +142,7 @@ function validateForm(name1, name2) {
         return {
 
             valid: false,
+            field: "person-one",
             message: "Please enter two different names."
 
         };
