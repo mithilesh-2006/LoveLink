@@ -70,21 +70,37 @@ function handleCalculation(event) {
 
     );
 
-    // Display result
-    playFlamesAnimation(result, () => {
+    // Display result    
+    const animationSection = document.getElementById("flames-animation");
 
-        showResult({
+    animationSection.classList.add("active"); // make it visible first
 
-            personOne: validation.data.personOne,
+    const targetY =
+        animationSection.getBoundingClientRect().top + window.scrollY - 100;
 
-            personTwo: validation.data.personTwo,
+    window.scrollTo({
 
-            relationship: result.relationship,
+        top: targetY,
 
-            remainingCount: result.remainingCount
+        behavior: "smooth"
+
+    });
+
+    setTimeout(() => {
+
+        playFlamesAnimation(result, () => {
+
+            showResult({
+
+                personOne: validation.data.personOne,
+                personTwo: validation.data.personTwo,
+                relationship: result.relationship,
+                remainingCount: result.remainingCount
+
+            });
 
         });
 
-    });
+    }, 500);
 
 }
