@@ -43,17 +43,16 @@ Instead of simply displaying the final relationship, LoveLink visualizes every e
 # Screenshots
 
 ### Hero Section
-![Hero Section](./assets/screenshots/hero.png)
+<img src="./assets/screenshots/hero.png" alt="Hero Section" width="100%">
 
 ### FLAMES Calculator
-![FLAMES Calculator](./assets/screenshots/calculator.png)
+<img src="./assets/screenshots/calculator.png" alt="Flames Calculation" width="100%">
 
 ### Elimination Animation
-![Elimination Animation](./assets/screenshots/animation.gif)
+<img src="./assets/screenshots/animation.png" alt="Animation" width="100%">
 
 ### Result Letter
-![Result Letter](./assets/screenshots/result.png)
-
+<img src="./assets/screenshots/result.png" alt="Result" width="100%">
 
 # 🎮 How It Works
 1. Enter your name.
