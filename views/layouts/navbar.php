@@ -11,8 +11,7 @@
         <ul class="nav-links">
 
             <li><a href="#">Home</a></li>
-            <li><a href="#">History</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="#calculator">Calculator</a></li>
 
         </ul>
 

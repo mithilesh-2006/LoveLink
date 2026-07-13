@@ -8,7 +8,7 @@
         <div class="hero-left">
 
             <span class="hero-label">
-                ❤️ Welcome to LoveLink
+                Welcome to LoveLink
             </span>
 
             <h1>
@@ -32,17 +32,17 @@
 
             <div class="hero-tags">
 
-                <span>📖 Vintage</span>
+                <span>Vintage</span>
 
-                <span>❤️ FLAMES</span>
+                <span>FLAMES</span>
 
-                <span>✨ Memories</span>
+                <span>Memories</span>
 
             </div>
 
             <a href="#calculator" class="hero-btn">
 
-                ❤️ Calculate Now
+                Calculate Now
 
             </a>
 
