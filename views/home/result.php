@@ -4,8 +4,6 @@
 
         <div class="letter-header">
 
-            <span class="stamp">💌</span>
-
             <h2>Love Letter</h2>
 
         </div>
