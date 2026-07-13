@@ -2,8 +2,6 @@
 
 <div align="center">
 
-<img src="assets/icons/logo.png" alt="LoveLink Logo" width="120"/>
-
 ### ✨ Notebook Inspired FLAMES Relationship Calculator
 
 A beautifully crafted FLAMES calculator with a vintage notebook theme, smooth animations, and an engaging user experience.
@@ -46,25 +44,25 @@ Instead of simply displaying the final relationship, LoveLink visualizes every e
 
 ## Hero Section
 
-![Hero Section](assets/screenshots/hero.png)
+![Hero Section](./assets/screenshots/hero.png)
 
 ---
 
 ## FLAMES Calculator
 
-![FLAMES Calculator](assets/screenshots/calculator.png)
+![FLAMES Calculator](./assets/screenshots/calculator.png)
 
 ---
 
 ## Elimination Animation
 
-![Elimination Animation](assets/screenshots/animation.png)
+![Elimination Animation](./assets/screenshots/animation.png)
 
 ---
 
 ## 💌 Result Letter
 
-![Result Letter](assets/screenshots/result.png)
+![Result Letter](./assets/screenshots/result.png)
 
 ---
 
