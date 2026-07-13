@@ -53,7 +53,8 @@
             </button>
 
             <button
-                class="retry-btn">
+                class="retry-btn"
+                id="retry-btn">
                 Try Again
             </button>
 

@@ -238,7 +238,8 @@ blockquote{
 }
 
 .share-btn:hover,
-.retry-btn:hover{
+.retry-btn:hover,
+.download-btn:hover{
 
     transform:translateY(-3px);
 
