@@ -42,29 +42,18 @@ Instead of simply displaying the final relationship, LoveLink visualizes every e
 
 # Screenshots
 
-## Hero Section
-
+### Hero Section
 ![Hero Section](./assets/screenshots/hero.png)
 
----
-
-## FLAMES Calculator
-
+### FLAMES Calculator
 ![FLAMES Calculator](./assets/screenshots/calculator.png)
 
----
+### Elimination Animation
+![Elimination Animation](./assets/screenshots/animation.gif)
 
-## Elimination Animation
-
-![Elimination Animation](./assets/screenshots/animation.png)
-
----
-
-## 💌 Result Letter
-
+### Result Letter
 ![Result Letter](./assets/screenshots/result.png)
 
----
 
 # 🎮 How It Works
 1. Enter your name.
