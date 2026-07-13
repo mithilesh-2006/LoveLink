@@ -44,6 +44,20 @@
 
 }
 
+.download-watermark{
+
+    margin-top:30px;
+
+    text-align:center;
+
+    font-size:14px;
+
+    color:#777;
+
+    font-style:italic;
+
+}
+
 
 /* ==========================================
    HEADER
@@ -209,12 +223,23 @@ blockquote{
 
 .retry-btn{
 
-    background:#F1F1F1;
+    background:var(--primary);
+
+    color:white;
+
+}
+
+.download-btn{
+
+    background:var(--primary);
+
+    color:white;
 
 }
 
 .share-btn:hover,
-.retry-btn:hover{
+.retry-btn:hover,
+.download-btn:hover{
 
     transform:translateY(-3px);
 

@@ -146,3 +146,15 @@ async function removeLetter(index) {
     await sleep(600);
 
 }
+
+function resetFlamesAnimation() {
+
+    const animation =
+        document.getElementById("flames-animation");
+
+    animation.classList.remove("active");
+
+    renderLetters(["F","L","A","M","E","S"]);
+
+}
+

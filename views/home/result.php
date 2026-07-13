@@ -36,24 +36,33 @@
                 meant to meet."
 
             </blockquote>
-
         </div>
 
         <div class="letter-footer">
 
-            <button class="share-btn">
-
-                Share Result
-
+            <button
+                class="download-btn"
+                id="download-btn">
+                Download
             </button>
 
-            <button class="retry-btn">
+            <button
+                class="share-btn"
+                id="share-btn">
+                Share
+            </button>
 
+            <button
+                class="retry-btn"
+                id="retry-btn">
                 Try Again
-
             </button>
 
         </div>
+
+        <p class="download-watermark">
+            Made with ❤️ LoveLink
+        </p>
 
     </div>
 
