@@ -2,11 +2,6 @@
    CALCULATOR
 ========================================== */
 
-.calculator{
-    padding:80px 0;
-    margin-left: 80px;
-}
-
 .calculator-wrapper{
 
     max-width:700px;
@@ -165,25 +160,6 @@
 
 }
 
-/* ==========================================
-   RESPONSIVE
-========================================== */
-
-@media(max-width:768px){
-
-    .calculator h2{
-
-        font-size:2.2rem;
-
-    }
-
-    .calculator-subtitle{
-        margin-bottom:35px;
-        font-size:1.2rem;
-
-    }
-
-}
 
 /*==============================
 FLAMES Animation
@@ -331,6 +307,66 @@ FLAMES Animation
 
         transform:scale(1.4);
 
+    }
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:768px){
+
+    .calculator{
+
+        margin-left:0;
+        padding:60px 20px;
+
+    }
+
+    .calculator-wrapper{
+
+        width:100%;
+
+    }
+
+    .calculator h2{
+
+        font-size:2.2rem;
+
+    }
+
+    .calculator-subtitle{
+
+        margin-bottom:30px;
+        font-size:1.2rem;
+
+    }
+
+    .input-field label{
+
+        font-size:1.4rem;
+
+    }
+
+    .input-field input{
+
+        font-size:1rem;
+
+    }
+
+    .flames-form button{
+
+        width:100%;
+
+    }
+
+}
+
+@media (min-width:993px){
+
+    .calculator{
+        padding:80px 40px;
     }
 
 }

@@ -89,6 +89,9 @@ body::before{
     z-index:-1;
 
 }
+
+
+
 /* ==========================================
    SELECTION
 ========================================== */
@@ -244,3 +247,26 @@ body::marker{
 
 }
 
+/* ==========================================
+   MOBILE NOTEBOOK
+========================================== */
+
+@media (max-width:768px){
+
+    body::before{
+
+        left:20px;
+
+    }
+
+    .spiral-binding{
+
+        left:0;
+
+        width:20px;
+
+        background-size:20px 44px;
+
+    }
+
+}

@@ -10,8 +10,8 @@
 
         <ul class="nav-links">
 
-            <li><a href="#">Home</a></li>
-            <li><a href="#calculator">Calculator</a></li>
+            <li class="hide-mobile"><a href="#">Home</a></li>
+            <li class="hide-mobile"><a href="#calculator">Calculator</a></li>
 
         </ul>
 

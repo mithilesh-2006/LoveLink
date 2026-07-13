@@ -270,34 +270,79 @@ blockquote{
 }
 
 /* ==========================================
-   MOBILE
+   MOBILE RESULT CARD
 ========================================== */
 
-@media(max-width:768px){
+@media (max-width:768px){
+
+    .result-section{
+
+        padding:45px 0;
+
+    }
 
     .result-paper{
 
-        padding:30px 20px;
+        width:88%;
+        max-width:320px;
+
+        margin:0 auto;
+        margin-left:25px;
+
+        padding:22px 18px;
+
+        border-radius:10px;
 
     }
 
     .letter-header h2{
 
-        font-size:2rem;
+        font-size:1.7rem;
 
     }
 
     .greeting{
 
-        font-size:1.5rem;
+        font-size:1.3rem;
+
+    }
+
+    .message{
+
+        font-size:.95rem;
+        line-height:1.6;
 
     }
 
     .result-badge span{
 
-        font-size:1.4rem;
+        font-size:1.15rem;
 
-        padding:15px 30px;
+        padding:12px 24px;
+
+    }
+
+    blockquote{
+
+        font-size:1.1rem;
+
+    }
+
+    .letter-footer{
+
+        flex-direction:column;
+
+        gap:12px;
+
+    }
+
+    .letter-footer button{
+
+        width:100%;
+
+        padding:12px;
+
+        font-size:.95rem;
 
     }
 
