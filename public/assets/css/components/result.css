@@ -44,31 +44,6 @@
 
 }
 
-/* Folded corner */
-
-.result-paper::after{
-
-    content:"";
-
-    position:absolute;
-
-    top:0;
-
-    right:0;
-
-    width:60px;
-
-    height:60px;
-
-    background:linear-gradient(
-        135deg,
-        transparent 50%,
-        #EFE5D0 50%
-    );
-
-    border-radius:0 12px 0 0;
-
-}
 
 /* ==========================================
    HEADER
