@@ -6,8 +6,7 @@
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    const shareBtn =
-        document.getElementById("share-btn");
+    const shareBtn = document.getElementById("share-btn");
 
     if (!shareBtn) return;
 
@@ -15,29 +14,38 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
+
 async function shareResult() {
 
     const personOne =
-        document.getElementById("result-person-one").textContent;
+        document.getElementById("result-person-one").textContent.trim();
 
     const personTwo =
-        document.getElementById("result-person-two").textContent;
+        document.getElementById("result-person-two").textContent.trim();
 
     const relationship =
-        document.getElementById("result-relationship").textContent;
+        document.getElementById("result-relationship").textContent.trim();
 
     const quote =
-        document.querySelector(".letter-content blockquote").textContent;
+        document.querySelector(".letter-content blockquote").textContent.trim();
 
-    const shareText =
+    const websiteURL = window.location.origin;
 
-`${personOne} ❤️ ${personTwo}
+    const shareText = `${personOne} ❤️ ${personTwo}
 
 Relationship: ${relationship}
 
 ${quote}
 
+✨ Check your own FLAMES result:
+${websiteURL}
+
 Made with ❤️ LoveLink`;
+
+
+    /* ==========================================
+       Web Share API
+    ========================================== */
 
     if (navigator.share) {
 
@@ -45,23 +53,70 @@ Made with ❤️ LoveLink`;
 
             await navigator.share({
 
-                title: "LoveLink Result",
+                title: "❤️ LoveLink - FLAMES Result",
 
-                text: shareText
+                text: shareText,
+
+                url: websiteURL
 
             });
 
+            console.log("Shared successfully.");
+
         }
 
-        catch(error){
+        catch (error) {
+
+            if (error.name === "AbortError") {
+
+                console.log("User cancelled sharing.");
+
+                return;
+
+            }
+
+            console.error(error);
+
+            fallbackShare(shareText);
 
         }
 
     }
 
-    else{
+    else {
 
-        alert("Sharing is not supported on this browser.");
+        fallbackShare(shareText);
+
+    }
+
+}
+
+
+
+/* ==========================================
+   Clipboard Fallback
+========================================== */
+
+async function fallbackShare(text) {
+
+    try {
+
+        await navigator.clipboard.writeText(text);
+
+        alert(
+            "The result has been copied to your clipboard."
+        );
+
+    }
+
+    catch (error) {
+
+        console.error(error);
+
+        prompt(
+            "Copy and share this result manually:",
+            text
+        );
 
     }
 
