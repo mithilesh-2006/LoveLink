@@ -1,0 +1,11 @@
+@media (max-width:768px){
+
+    .float{
+
+        width:40px !important;
+
+        opacity:.08;
+
+    }
+
+}

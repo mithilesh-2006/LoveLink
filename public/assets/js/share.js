@@ -55,8 +55,6 @@ Made with ❤️ LoveLink`;
 
         catch(error){
 
-            console.log(error);
-
         }
 
     }
