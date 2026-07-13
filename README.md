@@ -1,4 +1,4 @@
-<img width="263" height="76" alt="image" src="https://github.com/user-attachments/assets/06eeea2c-3e0c-43a8-8068-687b47f2349f" /># ❤️ LoveLink - Where names meet destiny.
+# ❤️ LoveLink - Where names meet destiny.
 
 <div align="center">
 
@@ -12,10 +12,16 @@ A beautifully crafted FLAMES calculator with a vintage notebook theme, smooth an
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
 
 </div>
+
 ---
 
 # Live Link
-http://lovelink.infinityfree.me/
+
+<a href="http://lovelink.infinityfree.me/" target="_blank">
+  <img src="public/assets/screenshots/livelink.png" alt="LiveLink">
+</a>
+
+---
 
 # About
 
