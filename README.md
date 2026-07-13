@@ -12,7 +12,9 @@ A beautifully crafted FLAMES calculator with a vintage notebook theme, smooth an
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
 
 </div>
-
+---
+# Live Link:
+http://lovelink.infinityfree.me
 ---
 
 # About
@@ -252,8 +254,6 @@ This project demonstrates
 # Author
 
 **Mithilesh P**
-
-Computer Science Engineering Student
 
 Aspiring Software Development Engineer
 
