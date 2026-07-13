@@ -1,8 +1,8 @@
-# ❤️ LoveLink
+# ❤️ LoveLink - Where names meet destiny.
 
 <div align="center">
 
-### ✨ Notebook Inspired FLAMES Relationship Calculator
+### Notebook Inspired FLAMES Relationship Calculator
 
 A beautifully crafted FLAMES calculator with a vintage notebook theme, smooth animations, and an engaging user experience.
 
@@ -15,7 +15,7 @@ A beautifully crafted FLAMES calculator with a vintage notebook theme, smooth an
 
 ---
 
-# 📖 About
+# About
 
 LoveLink is a modern implementation of the classic **FLAMES relationship game**. It combines nostalgic gameplay with a premium notebook-inspired interface, smooth elimination animations, and a personalized love letter result.
 
@@ -23,20 +23,19 @@ Instead of simply displaying the final relationship, LoveLink visualizes every e
 
 ---
 
-# ✨ Features
+# Features
 
-- ❤️ Notebook-inspired UI/UX
-- 📜 Exact FLAMES elimination algorithm
-- 🎬 Step-by-step elimination animation
-- 📝 Real-time form validation
-- 💌 Personalized Love Letter result
-- 📥 Download result as an image
-- 📤 Share result instantly
-- 🔄 Retry calculation
-- 📱 Fully responsive design
-- ♿ Accessibility support
-- 🔍 SEO optimized
-- 🎨 Smooth animations and transitions
+- Notebook-inspired UI/UX
+- Exact FLAMES elimination algorithm
+- Step-by-step elimination animation
+- Real-time form validation
+- Personalized Love Letter result
+- Download result as an image
+- Share result instantly
+- Retry calculation
+- Fully responsive design
+- SEO optimized
+- Smooth animations and transitions
 
 ---
 
@@ -66,7 +65,7 @@ Instead of simply displaying the final relationship, LoveLink visualizes every e
 
 ---
 
-# 🧮 FLAMES Relationships
+# FLAMES Relationships
 
 | Letter | Meaning |
 |---------|---------|
@@ -79,21 +78,18 @@ Instead of simply displaying the final relationship, LoveLink visualizes every e
 
 ---
 
-# 📂 Project Structure
+# Project Structure
 
 ```text
 LoveLink/
 |
 ├───README.md
-│   
 ├───public
 │   │   index.php
-│   │   
 │   └───assets
 │       ├───css
 │       │   │   responsive.css
 │       │   │   style.css
-│       │   │   
 │       │   ├───components
 │       │   │       buttons.css
 │       │   │       calculator.css
@@ -102,18 +98,15 @@ LoveLink/
 │       │   │       hero.css
 │       │   │       navbar.css
 │       │   │       result.css
-│       │   │       
 │       │   └───globals
 │       │           base.css
 │       │           layout.css
 │       │           reset.css
 │       │           typography.css
 │       │           utilities.css
-│       │           variables.css
-│       │           
+│       │           variables.css         
 │       ├───icons
 │       │       logo.png
-│       │
 │       └───js
 │              animation.js
 │              calculator.js
@@ -123,9 +116,7 @@ LoveLink/
 │              result.js
 │              retry.js
 │              share.js
-│              validation.js
-│              
-│               
+│              validation.js              
 └───views
     ├───home
     │       index.php
@@ -139,7 +130,7 @@ LoveLink/
 ```
 ---
 
-# 🛠 Tech Stack
+# Tech Stack
 
 ## Frontend
 
@@ -184,7 +175,7 @@ http://localhost/LOVELINK/public/
 
 ---
 
-# 📱 Responsive Design
+# Responsive Design
 
 LoveLink is optimized for
 
@@ -195,7 +186,7 @@ LoveLink is optimized for
 
 ---
 
-# 🔍 SEO
+# SEO
 
 Includes
 
@@ -207,7 +198,7 @@ Includes
 
 ---
 
-# 🚀 Performance
+# Performance
 
 - Modular CSS
 - Modular JavaScript
@@ -217,22 +208,22 @@ Includes
 
 ---
 
-# 📥 Download Feature
+# Download Feature
 
 Users can download the generated Love Letter as an image using **html2canvas**.
 
 ---
 
-# 📤 Share Feature
+# Share Feature
 
 Share the generated Love Letter directly using the browser's native Share API (supported browsers).
 
 ---
 
-# 🎯 Learning Outcomes
+# Learning Outcomes
 
 This project demonstrates
-
+- Git and GitHub
 - DOM Manipulation
 - Modular JavaScript Architecture
 - CSS Animations
@@ -240,12 +231,11 @@ This project demonstrates
 - Form Validation
 - Algorithm Visualization
 - UI/UX Design
-- Accessibility
 - Frontend Performance Optimization
 
 ---
 
-# 🚀 Future Enhancements
+# Future Enhancements
 
 - Dark Mode
 - Multiple Themes
@@ -259,7 +249,7 @@ This project demonstrates
 
 ---
 
-# 👨‍💻 Author
+# Author
 
 **Mithilesh P**
 
@@ -288,6 +278,6 @@ It motivates future development.
 
 ### ❤️ Every Love Story Begins With Two Names ❤️
 
-Made with ☕ and ❤️ by **Mithilesh P**
+Made with Love by **Mithilesh P**
 
 </div>
