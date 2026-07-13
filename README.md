@@ -17,7 +17,7 @@ A beautifully crafted FLAMES calculator with a vintage notebook theme, smooth an
 
 # Live Link
 
-http://lovelink.infinityfree.me/
+https://lovelink.infinityfree.me/
 
 ---
 
